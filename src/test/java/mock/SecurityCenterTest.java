@@ -15,5 +15,8 @@ public class SecurityCenterTest {
 
     @Test
     public void shouldVerifyDoorIsClosed() {
+        DoorPanelMock doorPanelMock = new DoorPanelMock();
+        SecurityCenter securityCenter = new SecurityCenter(doorPanelMock);
+        securityCenter.switchOn();
     }
 }
